@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#08090c">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
-<link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/inter-var.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/barlow-400.woff2" crossorigin>
 <link rel="stylesheet" href="../../assets/css/site.css">
 <script src="../../assets/js/site.js" defer></script>
 </head>
@@ -49,7 +49,7 @@
          fetchpriority="high" decoding="async" alt="Highway Racer Pro gameplay">
   </div>
   <div class="hero__body wrap">
-    <p class="eyebrow">Spektra Games &middot; 2025&ndash;2026</p>
+    <p class="eyebrow">Spektra Games, 2025&ndash;2026</p>
     <h1 style="font-size: var(--step-4)">Highway Racer Pro</h1>
     <p class="hero__lede">A realistic highway traffic racer that launched to #1 in Racing on the US App Store and stayed the category&rsquo;s most-downloaded title.</p>
     <div class="hero__meta"><span><b>Role</b> Founding engineer</span><span><b>Engine</b> Unity</span><span><b>Platforms</b> iOS, Android</span><span><b>Launched</b> May 2025</span></div>
@@ -64,56 +64,30 @@
 
 <section class="section">
   <div class="wrap">
-    <div class="section__head reveal"><p class="eyebrow">Overview</p><h2>What it is</h2></div>
-    <div class="prose stack reveal"><p class="slot slot--text is-empty" data-slot="hrp-overview">Overview &mdash; two or three paragraphs on what the game is, what launch looked like, and the scale it runs at now.</p></div>
+    <div class="section__head"><h2>What it is</h2></div>
+    <div class="prose stack"><p>Highway Racer Pro is a traffic racer: you drive real cars through live highway traffic on routes modelled on Japan, Germany, Brazil and the USA, racing other players in real time.</p><p>It launched in May 2025 to #1 in Racing on the US App Store and topped the charts in 45+ countries, on 350,000 pre-registrations and no paid marketing. I started it with the CTO as one of its first two engineers and stayed with it through launch and live operation as the team grew to four.</p></div>
 
-    <div class="section__head reveal" style="margin-top: var(--s-9)"><p class="eyebrow">My role</p><h2>What I built</h2></div>
+    <div class="section__head" style="margin-top: var(--s-9)"><h2>What I built</h2></div>
     <div class="split">
-      <div class="prose stack reveal">
+      <div class="prose stack">
         <ul class="stack" style="--flow: var(--s-3)">
           <li style="padding-left: var(--s-4); border-left: 2px solid var(--accent-line)">Started the project with the CTO as one of its first two engineers, and worked across effectively every system through launch and live operation.</li><li style="padding-left: var(--s-4); border-left: 2px solid var(--accent-line)">Set the architecture, documentation and review standards for the codebase.</li><li style="padding-left: var(--s-4); border-left: 2px solid var(--accent-line)">Built the modular vehicle physics components behind the game&rsquo;s driving feel, plus the highway traffic simulation and racing AI.</li><li style="padding-left: var(--s-4); border-left: 2px solid var(--accent-line)">Built an internal profiling tool that auto-captures memory and performance traces from scripted scenarios and runs AI analysis over them, surfacing regressions unattended.</li><li style="padding-left: var(--s-4); border-left: 2px solid var(--accent-line)">Built a native iOS and Android plugin exposing home-screen quick actions and app shortcuts into Unity.</li><li style="padding-left: var(--s-4); border-left: 2px solid var(--accent-line)">Designed the case study and ran technical interviews for the engineers hired as the team grew to four.</li>
         </ul>
       </div>
-      <div class="reveal"><figure class="reveal"><div class="videoloop" style="aspect-ratio:16/9"><img src="../../images/games/highway-racer-pro/shot-02-1600.jpg" srcset="../../images/games/highway-racer-pro/shot-02-800.jpg 800w, ../../images/games/highway-racer-pro/shot-02-1600.jpg 1600w" sizes="(min-width:60rem) 45vw, 100vw" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" alt="The Highway Racer Pro customization garage, with body parts listed down the left."></div><figcaption>The customization garage &mdash; 60+ part categories per vehicle.</figcaption></figure></div>
+      <div><figure><div class="videoloop" style="aspect-ratio:16/9"><img src="../../images/games/highway-racer-pro/shot-02-1600.jpg" srcset="../../images/games/highway-racer-pro/shot-02-800.jpg 800w, ../../images/games/highway-racer-pro/shot-02-1600.jpg 1600w" sizes="(min-width:60rem) 45vw, 100vw" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" alt="The Highway Racer Pro customization garage, with body parts listed down the left."></div><figcaption>The customization garage &mdash; 60+ part categories per vehicle.</figcaption></figure></div>
     </div>
     
-    <div class="split" style="margin-top: var(--s-9)">
-      <div class="prose stack reveal" style="--flow: var(--s-4)">
-        <h3>Customization at scale</h3>
-        <p>The customization system spans 45+ vehicles, each with 60+ part categories, 4+ parts per category and five LODs per part &mdash; all authored inside a single vehicle FBX. I extracted those parts and their LODs into Addressables groups tuned by packing option and label, so only what a scene actually needs reaches memory.</p><p class="slot slot--text is-empty" data-slot="hrp-dd1">Add detail: how the extraction pipeline worked, what the grouping strategy was, and what it bought in memory terms.</p>
-      </div>
-      <div class="reveal"><!-- SLOT hrp-dd1-fig | NEEDS: Customization screen or part breakdown &mdash; 1600&times;900 | FILL: add <img>, remove is-empty -->
-    <figure class="slot slot--media is-empty" data-slot="hrp-dd1-fig" style="--slot-ratio: 16/9">
-      <span class="slot__label">Customization screen or part breakdown &mdash; 1600&times;900</span>
-    </figure></div>
-    </div>
-    <div class="split split--reverse" style="margin-top: var(--s-9)">
-      <div class="prose stack reveal" style="--flow: var(--s-4)">
-        <h3>Traffic simulation and racing AI</h3>
-        <p class="slot slot--text is-empty" data-slot="hrp-dd2">Describe the highway traffic system: density, lane logic, how AI drivers behave and how it stays cheap on mobile.</p>
-      </div>
-      <div class="reveal"><!-- SLOT hrp-dd2-fig | NEEDS: Traffic or AI debug view &mdash; 1600&times;900 | FILL: add <img>, remove is-empty -->
-    <figure class="slot slot--media is-empty" data-slot="hrp-dd2-fig" style="--slot-ratio: 16/9">
-      <span class="slot__label">Traffic or AI debug view &mdash; 1600&times;900</span>
-    </figure></div>
-    </div>
-    <div class="split" style="margin-top: var(--s-9)">
-      <div class="prose stack reveal" style="--flow: var(--s-4)">
-        <h3>Profiling, run unattended</h3>
-        <p class="slot slot--text is-empty" data-slot="hrp-dd3">Describe the internal tool: what it captures, how scenarios are scripted, what the AI analysis surfaces, and how it fit into the workflow.</p>
-      </div>
-      <div class="reveal"><!-- SLOT hrp-dd3-fig | NEEDS: Tool screenshot or report output &mdash; 1600&times;900 | FILL: add <img>, remove is-empty -->
-    <figure class="slot slot--media is-empty" data-slot="hrp-dd3-fig" style="--slot-ratio: 16/9">
-      <span class="slot__label">Tool screenshot or report output &mdash; 1600&times;900</span>
-    </figure></div>
+    <div class="prose stack" style="--flow: var(--s-4); margin-top: var(--s-9)">
+      <h3>Customization at scale</h3>
+      <p>The customization system spans 45+ vehicles, each with 60+ part categories, 4+ parts per category and five LODs per part &mdash; all authored inside a single vehicle FBX. I extracted those parts and their LODs into Addressables groups tuned by packing option and label, so only what a scene actually needs reaches memory.</p>
     </div>
   </div>
 </section>
 
 <section class="section section--alt">
   <div class="wrap--wide">
-    <div class="section__head reveal"><p class="eyebrow">Gallery</p><h2>In game</h2></div>
-    <div class="gallery reveal">
+    <div class="section__head"><h2>In game</h2></div>
+    <div class="gallery">
       <figure>
         <img src="../../images/games/highway-racer-pro/new-01-800.jpg"
              srcset="../../images/games/highway-racer-pro/new-01-800.jpg 800w, ../../images/games/highway-racer-pro/new-01-1600.jpg 1600w"
@@ -144,10 +118,10 @@
 
 <section class="section">
   <div class="wrap">
-    <div class="section__head reveal"><p class="eyebrow">Results</p><h2>How it landed</h2></div>
-    <div class="prose stack reveal"><p>Highway Racer Pro launched to <b>#1 in Racing on the US App Store</b> and topped the charts in 45+ countries, on 350,000+ pre-registrations and no paid marketing. It has been the category&rsquo;s most-downloaded title on the US App Store since, and Apple featured it in a &ldquo;Games We Love&rdquo; editorial story.</p><p>Players make their own content about it &mdash; the clip below is a driving video by <a href="https://www.youtube.com/@CouchCommander3" target="_blank" rel="noopener noreferrer">CouchCommander</a>.</p></div>
+    <div class="section__head"><h2>How it landed</h2></div>
+    <div class="prose stack"><p>Highway Racer Pro launched to <b>#1 in Racing on the US App Store</b> and topped the charts in 45+ countries, on 350,000+ pre-registrations and no paid marketing. It has been the category&rsquo;s most-downloaded title on the US App Store since, and Apple featured it in a &ldquo;Games We Love&rdquo; editorial story.</p><p>Players make their own content about it &mdash; the clip below is a driving video by <a href="https://www.youtube.com/@CouchCommander3" target="_blank" rel="noopener noreferrer">CouchCommander</a>.</p></div>
   </div>
-  <div class="wrap--wide" style="margin-top: var(--s-7)"><figure class="embed reveal">
+  <div class="wrap--wide" style="margin-top: var(--s-7)"><figure class="embed">
       <div class="embed__frame" data-embed="https://www.youtube-nocookie.com/embed/u19Q5QlVjTg?start=495&amp;end=795&amp;mute=1&amp;rel=0&amp;autoplay=1&amp;playsinline=1" data-embed-title="Highway Racer Pro driving footage by CouchCommander">
         <img src="../../images/games/highway-racer-pro/yt-poster.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="">
         <button class="embed__play" type="button" data-embed-play>
@@ -158,7 +132,10 @@
       <figcaption>Player-made footage by CouchCommander, from 8:15. Muted &mdash; use the player controls for sound.</figcaption>
     </figure></div>
   <div class="wrap">
-    <p style="margin-top: var(--s-8)"><a class="btn btn--primary" href="../parking-master-multiplayer-2/index.html">Next: Parking Master Multiplayer 2</a></p>
+    <div class="case-nav" style="margin-top: var(--s-8)">
+      <a class="btn btn--primary" href="../parking-master-multiplayer-2/index.html">Next: Parking Master Multiplayer 2</a>
+      <a class="btn btn--ghost" href="../../index.html">Back to home</a>
+    </div>
   </div>
 </section>
 

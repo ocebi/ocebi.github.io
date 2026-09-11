@@ -14,7 +14,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#08090c">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
-<link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/inter-var.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="../../assets/fonts/barlow-400.woff2" crossorigin>
 <link rel="stylesheet" href="../../assets/css/site.css">
 <script src="../../assets/js/site.js" defer></script>
 </head>
@@ -49,7 +49,7 @@
          fetchpriority="high" decoding="async" alt="Parking Master Multiplayer 2 gameplay">
   </div>
   <div class="hero__body wrap">
-    <p class="eyebrow">Spektra Games &middot; 2023&ndash;2025</p>
+    <p class="eyebrow">Spektra Games, 2023&ndash;2025</p>
     <h1 style="font-size: var(--step-4)">Parking Master Multiplayer 2</h1>
     <p class="hero__lede">An open-world car driving and parking title with 15 million unique players, running live across iOS and Android.</p>
     <div class="hero__meta"><span><b>Role</b> Gameplay &amp; performance</span><span><b>Engine</b> Unity</span><span><b>Platforms</b> iOS, Android</span></div>
@@ -58,54 +58,40 @@
 </section>
 
 <section class="statbar" aria-label="Key numbers">
-  <ul class="wrap"><li><span class="stat__n">15M</span><span class="stat__l">Unique players</span></li><li><span class="stat__n">10M+</span><span class="stat__l">Downloads</span></li><li><span class="stat__n">iOS</span><span class="stat__l">&amp; Android</span></li><li><span class="stat__n">Live</span><span class="stat__l">Ongoing operation</span></li></ul>
+  <ul class="wrap"><li><span class="stat__n">15M+</span><span class="stat__l">Downloads</span></li><li><span class="stat__n">iOS</span><span class="stat__l">&amp; Android</span></li><li><span class="stat__n">Live</span><span class="stat__l">Ongoing operation</span></li></ul>
 </section>
 
 
 <section class="section">
   <div class="wrap">
-    <div class="section__head reveal"><p class="eyebrow">Overview</p><h2>What it is</h2></div>
-    <div class="prose stack reveal"><p class="slot slot--text is-empty" data-slot="pmm2-overview">Overview &mdash; what the game is, who plays it, and what working on a title at this scale was like day to day.</p></div>
+    <div class="section__head"><h2>What it is</h2></div>
+    <div class="prose stack"><p>Parking Master Multiplayer 2 is an open-world driving and parking game where players share a city: meeting up, trading cars, showing off their builds and racing each other. It has passed 15 million downloads across iOS and Android and is still in live operation.</p></div>
 
-    <div class="section__head reveal" style="margin-top: var(--s-9)"><p class="eyebrow">My role</p><h2>What I built</h2></div>
+    <div class="section__head" style="margin-top: var(--s-9)"><h2>What I built</h2></div>
     <div class="split">
-      <div class="prose stack reveal">
+      <div class="prose stack">
         <ul class="stack" style="--flow: var(--s-3)">
-          <li style="padding-left: var(--s-4); border-left: 2px solid var(--accent-line)">Shipped a broad range of player-facing systems into a live title at that scale.</li><li style="padding-left: var(--s-4); border-left: 2px solid var(--accent-line)">Ran continuous memory and CPU optimization to hold smooth performance across low-end Android and iOS hardware.</li>
+          <li style="padding-left: var(--s-4); border-left: 2px solid var(--accent-line)">Shipped a broad range of player-facing systems into a live title at that scale.</li><li style="padding-left: var(--s-4); border-left: 2px solid var(--accent-line)">Built the character customization system, multiplayer events, new game modes and a vehicle accessory system.</li><li style="padding-left: var(--s-4); border-left: 2px solid var(--accent-line)">Optimized the vehicle customization system, and ran continuous memory and CPU work to hold performance across low-end Android and iOS hardware.</li>
         </ul>
       </div>
-      <div class="reveal"><figure class="reveal"><div class="videoloop" style="aspect-ratio:16/9"><img src="../../images/games/parking-master-multiplayer-2/new-02-1600.jpg" srcset="../../images/games/parking-master-multiplayer-2/new-02-800.jpg 800w, ../../images/games/parking-master-multiplayer-2/new-02-1600.jpg 1600w" sizes="(min-width:60rem) 45vw, 100vw" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" alt="The Car Gala screen, where players vote on each other&rsquo;s customized cars."></div><figcaption>Car Gala &mdash; players rate each other&rsquo;s builds.</figcaption></figure></div>
+      <div><figure><div class="videoloop" style="aspect-ratio:16/9"><img src="../../images/games/parking-master-multiplayer-2/new-02-1600.jpg" srcset="../../images/games/parking-master-multiplayer-2/new-02-800.jpg 800w, ../../images/games/parking-master-multiplayer-2/new-02-1600.jpg 1600w" sizes="(min-width:60rem) 45vw, 100vw" width="1600" height="900" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover" alt="The Car Gala screen, where players vote on each other&rsquo;s customized cars."></div><figcaption>Car Gala &mdash; players rate each other&rsquo;s builds.</figcaption></figure></div>
     </div>
     
-    <div class="split" style="margin-top: var(--s-9)">
-      <div class="prose stack reveal" style="--flow: var(--s-4)">
-        <h3>Performance on low-end hardware</h3>
-        <p class="slot slot--text is-empty" data-slot="pmm2-dd1">Describe the optimization work: what the constraints were, what you measured, what you changed, and what it meant for the install base.</p>
-      </div>
-      <div class="reveal"><!-- SLOT pmm2-dd1-fig | NEEDS: Profiler capture or before/after &mdash; 1600&times;900 | FILL: add <img>, remove is-empty -->
-    <figure class="slot slot--media is-empty" data-slot="pmm2-dd1-fig" style="--slot-ratio: 16/9">
-      <span class="slot__label">Profiler capture or before/after &mdash; 1600&times;900</span>
-    </figure></div>
+    <div class="prose stack" style="--flow: var(--s-4); margin-top: var(--s-9)">
+      <h3>Systems I shipped</h3>
+      <p>I built the character customization system, multiplayer events, new game modes and a vehicle accessory system, among others. The accessory system paid off straight away: the police siren it introduced became the month&rsquo;s best-selling in-app purchase.</p>
     </div>
-    <div class="split split--reverse" style="margin-top: var(--s-9)">
-      <div class="prose stack reveal" style="--flow: var(--s-4)">
-        <h3>Player-facing systems</h3>
-        <p class="slot slot--text is-empty" data-slot="pmm2-dd2">Pick two or three systems worth describing in depth &mdash; what they do and why they were built that way.</p>
-      </div>
-      <div class="reveal"><figure class="reveal">
-      <div class="videoloop">
-        <video src="../../images/games/parking-master-multiplayer-2/social-walk.mp4" autoplay muted loop playsinline preload="metadata"></video>
-      </div>
-      <figcaption>Walking the open world between cars &mdash; players meet, trade and race in shared space.</figcaption>
-    </figure></div>
+    <div class="prose stack" style="--flow: var(--s-4); margin-top: var(--s-9)">
+      <h3>Performance on the hardware people actually own</h3>
+      <p>I optimized the vehicle customization system and ran continuous memory and CPU work to hold smooth performance across low-end Android and iOS devices.</p>
     </div>
   </div>
 </section>
 
 <section class="section section--alt">
   <div class="wrap--wide">
-    <div class="section__head reveal"><p class="eyebrow">Gallery</p><h2>In game</h2></div>
-    <div class="gallery reveal">
+    <div class="section__head"><h2>In game</h2></div>
+    <div class="gallery">
       <figure>
         <img src="../../images/games/parking-master-multiplayer-2/new-04-800.jpg"
              srcset="../../images/games/parking-master-multiplayer-2/new-04-800.jpg 800w, ../../images/games/parking-master-multiplayer-2/new-04-1600.jpg 1600w"
@@ -136,12 +122,15 @@
 
 <section class="section">
   <div class="wrap">
-    <div class="section__head reveal"><p class="eyebrow">Results</p><h2>How it landed</h2></div>
-    <div class="prose stack reveal"><p>The game has reached <b>15 million unique players</b> and 10M+ downloads, and remains in live operation.</p><p class="slot slot--text is-empty" data-slot="pmm2-results">Add anything else measurable: retention, review score movement, crash-rate change.</p></div>
+    <div class="section__head"><h2>How it landed</h2></div>
+    <div class="prose stack"><p>The game has passed <b>15 million downloads</b> across iOS and Android and remains in live operation. The vehicle accessory system I built produced the month&rsquo;s best-selling in-app purchase, a police siren.</p></div>
   </div>
   <div class="wrap--wide" style="margin-top: var(--s-7)"></div>
   <div class="wrap">
-    <p style="margin-top: var(--s-8)"><a class="btn btn--primary" href="../highway-racer-pro/index.html">Next: Highway Racer Pro</a></p>
+    <div class="case-nav" style="margin-top: var(--s-8)">
+      <a class="btn btn--primary" href="../highway-racer-pro/index.html">Next: Highway Racer Pro</a>
+      <a class="btn btn--ghost" href="../../index.html">Back to home</a>
+    </div>
   </div>
 </section>
 
