@@ -1,4 +1,0 @@
-# Unity WebGL build files (large binaries)
-casino/Build/*.unityweb filter=lfs diff=lfs merge=lfs -text
-casino/Build/*.wasm filter=lfs diff=lfs merge=lfs -text
-casino/Build/*.data filter=lfs diff=lfs merge=lfs -text
