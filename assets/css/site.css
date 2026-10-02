@@ -218,6 +218,12 @@
     .nav a { white-space: nowrap; }
     .nav__cta { margin-left: 0; }
   }
+  @media (max-width: 31.99rem) {
+    /* On a phone, Hyper-casual gives way so CV stays on screen; the section is a scroll away. */
+    .nav { gap: var(--s-3); }
+    .nav .nav__optional { display: none; }
+    .nav .nav__cta { padding-inline: var(--s-4); }
+  }
 
   /* --- hero --- */
   .hero { position: relative; min-height: min(88svh, 900px); display: flex; align-items: flex-end; overflow: hidden; }
