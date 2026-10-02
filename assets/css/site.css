@@ -200,11 +200,19 @@
   }
   .nav a:hover, .nav a[aria-current] { color: var(--text-hi); }
   .nav__cta { margin-left: var(--s-2); }
+  /* The side project's link, in the casino button's pink gradient. */
+  .nav a.nav__casino {
+    font-weight: 600; color: #ff4f9a;
+    background: linear-gradient(110deg, #ff6a6a 0%, #ff2e93 50%, #b84dff 100%) 0 0 / 200% 100%;
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    transition: background-position 600ms var(--ease);
+  }
+  .nav a.nav__casino:hover { background-position: 100% 0; }
   @media (max-width: 47.99rem) {
     /* Keep every link reachable on a phone; let the row scroll if it is tight
        rather than hiding the navigation entirely. */
     .site-header .wrap--wide { gap: var(--s-3); }
-    .brand { font-size: 1.1rem; }
+    .brand { font-size: 1.1rem; flex-shrink: 0; white-space: nowrap; }
     .nav { gap: var(--s-4); overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
     .nav::-webkit-scrollbar { display: none; }
     .nav a { white-space: nowrap; }
@@ -385,6 +393,30 @@
   .about { display: grid; gap: var(--s-7); }
   @media (min-width: 60rem) { .about { grid-template-columns: 1.4fr 1fr; gap: var(--s-8); } }
   .about__portrait { border-radius: var(--r-lg); border: 1px solid var(--line); }
+
+  /* --- casino: the one place the page leaves the orange accent, so the side
+     project reads as play rather than another case study --- */
+  .casino { display: grid; gap: var(--s-6); align-items: center; }
+  .casino .eyebrow { color: #ff4f9a; }
+  /* The game's own paw cursor, sitting in the line like an emoji. */
+  .casino__paw { display: inline-block; width: 1.4em; height: auto; vertical-align: -.3em; margin-left: .15em; }
+  @media (min-width: 48rem) { .casino { grid-template-columns: minmax(0, 1fr) auto; gap: var(--s-8); } }
+  .btn--casino {
+    justify-content: center; padding: var(--s-4) var(--s-8);
+    font-family: var(--font-display); font-size: var(--step-4); font-weight: 400;
+    letter-spacing: .08em; line-height: 1.1; color: #fff;
+    text-shadow: 0 2px 12px rgba(90,0,50,.35);
+    background: linear-gradient(110deg, #ff6a6a 0%, #ff2e93 50%, #b84dff 100%) 0 0 / 200% 100%;
+    border: 0; border-radius: var(--r-lg);
+    box-shadow: 0 18px 48px -16px rgba(255,46,147,.65);
+    transition: background-position 600ms var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  }
+  .btn--casino:hover {
+    background-position: 100% 0; transform: translateY(-3px);
+    box-shadow: 0 24px 60px -16px rgba(255,46,147,.85);
+  }
+  .btn--casino:focus-visible { outline-color: #ff4f9a; }
+  @media (max-width: 47.99rem) { .btn--casino { width: 100%; } }
 
   /* --- footer --- */
   .site-footer { border-top: 1px solid var(--line); padding-block: var(--s-7); background: var(--ink-850); }
