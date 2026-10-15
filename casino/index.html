@@ -257,6 +257,15 @@
         productVersion: "0.1.0",
         // The chip balance lives in a file in persistentDataPath (IndexedDB); keep it across visits.
         autoSyncPersistentDataPath: true,
+        // Unity keeps the data file in the browser and by default asks the server each visit whether it's still
+        // current, which waits on jsDelivr like a download does. The deployed page's buildUrl names the commit that
+        // holds the files, so a saved copy is always current there: use it without asking. A local build changes its
+        // files at the same address, so it keeps asking.
+        cacheControl: function (url) {
+          if (url != config.dataUrl)
+            return "no-store";
+          return buildUrl != mirrorUrl ? "immutable" : "must-revalidate";
+        },
         showBanner: function (message, type) {
           if (type == "error")
             showError(message);
@@ -324,14 +333,32 @@
       var fill = document.getElementById("loading-fill");
       var statusLabel = document.getElementById("loading-status");
 
+      // Unity reports no progress until every file has started to arrive, which can take half a minute when one falls
+      // back to GitHub Pages. So the bar creeps along by itself, slowing down as it nears 60%, until the real progress
+      // passes it, and it eases towards whichever is ahead rather than jumping.
+      var loadingStart = performance.now();
+      var realProgress = 0, shownProgress = 0, gameLoaded = false, lastFrame = loadingStart;
+      function drawProgress(now) {
+        var creep = 0.6 * (1 - Math.exp(-(now - loadingStart) / 15000));
+        var target = gameLoaded ? 1 : Math.max(realProgress, creep);
+        shownProgress += (target - shownProgress) * (1 - Math.exp(-(now - lastFrame) / 150));
+        lastFrame = now;
+        fill.style.width = (100 * shownProgress) + "%";
+        statusLabel.textContent = realProgress < 0.9 && !gameLoaded ?
+          "Loading… " + Math.round(100 * shownProgress) + "%" : "Shuffling the cards…";
+        if (!gameLoaded || shownProgress < 0.999)
+          requestAnimationFrame(drawProgress);
+        else
+          fill.style.width = "100%";
+      }
+      requestAnimationFrame(drawProgress);
+
       function startGame() {
         createUnityInstance(canvas, config, function (progress) {
-          fill.style.width = (100 * progress) + "%";
-          statusLabel.textContent = progress < 0.9 ? "Loading… " + Math.round(100 * progress) + "%" : "Shuffling the cards…";
+          realProgress = progress;
         }).then(function (instance) {
           window.unityInstance = instance;
-          fill.style.width = "100%";
-          statusLabel.textContent = "Shuffling the cards…";
+          gameLoaded = true;
           setTimeout(hideSplash, Math.max(0, splashUntil - performance.now()));
         }).catch(function (message) {
           showError(message);
