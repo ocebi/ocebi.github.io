@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "m3_0009",
+  "game": "match3",
+  "payloadVersion": 1,
+  "contentHash": "14a2799acd8c4ee7",
+  "meta": {
+    "difficulty": "normal",
+    "tags": [
+      "duck",
+      "shape:hourglass"
+    ],
+    "metrics": {
+      "nearMisses": 0.0,
+      "winRate": 0.604
+    }
+  },
+  "payload": {
+    "moves": 26,
+    "colours": 5,
+    "goals": [
+      {
+        "kind": "duck",
+        "count": 2
+      }
+    ],
+    "rows": [
+      ".d....d.",
+      "........",
+      "........",
+      "#......#",
+      "##....##",
+      "#......#",
+      "........",
+      "........",
+      "........"
+    ]
+  }
+}

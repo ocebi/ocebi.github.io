@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "m3_0046",
+  "game": "match3",
+  "payloadVersion": 1,
+  "contentHash": "a186eb7c7380d618",
+  "meta": {
+    "difficulty": "easy",
+    "tags": [
+      "chain",
+      "shape:tower"
+    ],
+    "metrics": {
+      "nearMisses": 0.5,
+      "winRate": 0.958
+    }
+  },
+  "payload": {
+    "moves": 20,
+    "colours": 4,
+    "goals": [
+      {
+        "kind": "chain",
+        "count": 16
+      }
+    ],
+    "rows": [
+      "##.....##",
+      "#.......#",
+      ".........",
+      "..v...v..",
+      ".........",
+      ".........",
+      ".........",
+      ".........",
+      "........."
+    ],
+    "chains": [".........", ".c.....c.", ".c.....c.", ".c.....c.", ".c.....c.", ".c.....c.", ".c.....c.", ".c.....c.", ".c.....c."]
+  }
+}

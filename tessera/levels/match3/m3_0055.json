@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "m3_0055",
+  "game": "match3",
+  "payloadVersion": 1,
+  "contentHash": "d09dfdd493444612",
+  "meta": {
+    "difficulty": "hard",
+    "tags": [
+      "colour",
+      "box",
+      "duck",
+      "shape:castle"
+    ],
+    "metrics": {
+      "nearMisses": 0.543,
+      "winRate": 0.271
+    }
+  },
+  "payload": {
+    "moves": 33,
+    "colours": 5,
+    "goals": [
+      {
+        "kind": "colour",
+        "count": 40,
+        "colour": 1
+      },
+      {
+        "kind": "box",
+        "count": 18
+      },
+      {
+        "kind": "duck",
+        "count": 3
+      }
+    ],
+    "rows": [
+      ".#.#d#.#.",
+      ".d.....d.",
+      ".........",
+      ".........",
+      ".........",
+      ".........",
+      ".........",
+      "XXXXXXXXX",
+      "XXXXXXXXX",
+      "........."
+    ]
+  }
+}

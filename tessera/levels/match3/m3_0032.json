@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "m3_0032",
+  "game": "match3",
+  "payloadVersion": 1,
+  "contentHash": "80473c7a1f77f3a9",
+  "meta": {
+    "difficulty": "normal",
+    "tags": [
+      "colour",
+      "floor",
+      "shape:octagon"
+    ],
+    "metrics": {
+      "nearMisses": 1.0,
+      "winRate": 0.729
+    }
+  },
+  "payload": {
+    "moves": 25,
+    "colours": 5,
+    "goals": [
+      {
+        "kind": "colour",
+        "count": 31,
+        "colour": 1
+      },
+      {
+        "kind": "floor",
+        "count": 19
+      }
+    ],
+    "rows": [
+      "###...###",
+      "##.....##",
+      "#.......#",
+      ".........",
+      ".........",
+      ".........",
+      "#.......#",
+      "##.....##",
+      "###...###"
+    ],
+    "floor": [".........", ".........", ".........", "..22222..", "..2...2..", "..2...2..", ".22...22.", "..2.2.2..", "...222..."]
+  }
+}

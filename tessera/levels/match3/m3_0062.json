@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "m3_0062",
+  "game": "match3",
+  "payloadVersion": 1,
+  "contentHash": "a8ffecd68828192a",
+  "meta": {
+    "difficulty": "normal",
+    "tags": [
+      "balloon",
+      "shape:corners"
+    ],
+    "metrics": {
+      "nearMisses": 0.529,
+      "winRate": 0.646
+    }
+  },
+  "payload": {
+    "moves": 14,
+    "colours": 5,
+    "goals": [
+      {
+        "kind": "balloon",
+        "count": 12
+      }
+    ],
+    "rows": [
+      "#......#",
+      "........",
+      "........",
+      "........",
+      "o......o",
+      "........",
+      "o..oo..o",
+      "........",
+      ".oo..oo.",
+      "#..oo..#"
+    ]
+  }
+}

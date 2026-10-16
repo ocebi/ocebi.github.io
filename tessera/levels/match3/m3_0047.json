@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "m3_0047",
+  "game": "match3",
+  "payloadVersion": 1,
+  "contentHash": "db9efb66ff8e8d5d",
+  "meta": {
+    "difficulty": "normal",
+    "tags": [
+      "colour",
+      "box",
+      "shape:hourglass"
+    ],
+    "metrics": {
+      "nearMisses": 0.933,
+      "winRate": 0.688
+    }
+  },
+  "payload": {
+    "moves": 21,
+    "colours": 5,
+    "goals": [
+      {
+        "kind": "colour",
+        "count": 34,
+        "colour": 1
+      },
+      {
+        "kind": "box",
+        "count": 10
+      }
+    ],
+    "rows": [
+      "........",
+      "........",
+      "..XXXX..",
+      "#......#",
+      "##....##",
+      "#......#",
+      "........",
+      ".XXXXXX.",
+      "........"
+    ]
+  }
+}

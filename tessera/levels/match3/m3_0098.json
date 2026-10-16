@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "m3_0098",
+  "game": "match3",
+  "payloadVersion": 1,
+  "contentHash": "ac6394e9c9da01cb",
+  "meta": {
+    "difficulty": "normal",
+    "tags": [
+      "box",
+      "chain",
+      "shape:topcorners"
+    ],
+    "metrics": {
+      "nearMisses": 0.4,
+      "winRate": 0.479
+    }
+  },
+  "payload": {
+    "moves": 18,
+    "colours": 5,
+    "goals": [
+      {
+        "kind": "box",
+        "count": 14
+      },
+      {
+        "kind": "chain",
+        "count": 14
+      }
+    ],
+    "rows": [
+      "#.......#",
+      ".........",
+      ".........",
+      "....*....",
+      ".x..x..x.",
+      ".x..x..x.",
+      ".x..x..x.",
+      ".x.xxx.x.",
+      "........."
+    ],
+    "chains": [".........", ".........", "....c....", ".........", "..c...c..", "...c.c...", "c.c...c.c", ".........", "c.c.c.c.c"]
+  }
+}

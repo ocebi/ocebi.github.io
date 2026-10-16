@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "m3_0012",
+  "game": "match3",
+  "payloadVersion": 1,
+  "contentHash": "70d1ebf8bb1561d2",
+  "meta": {
+    "difficulty": "normal",
+    "tags": [
+      "balloon",
+      "duck",
+      "shape:topcorners"
+    ],
+    "metrics": {
+      "nearMisses": 0.0,
+      "winRate": 0.688
+    }
+  },
+  "payload": {
+    "moves": 28,
+    "colours": 5,
+    "goals": [
+      {
+        "kind": "balloon",
+        "count": 6
+      },
+      {
+        "kind": "duck",
+        "count": 2
+      }
+    ],
+    "rows": [
+      "#d....d#",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "o......o",
+      "oo....oo"
+    ]
+  }
+}
