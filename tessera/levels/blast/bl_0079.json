@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "bl_0079",
+  "game": "blast",
+  "payloadVersion": 1,
+  "contentHash": "78ef12ba081e9242",
+  "meta": {
+    "difficulty": "normal",
+    "tags": [
+      "duck",
+      "shape:bevel"
+    ],
+    "metrics": {
+      "nearMisses": 0.0,
+      "winRate": 0.552
+    }
+  },
+  "payload": {
+    "moves": 15,
+    "colours": 4,
+    "goals": [
+      {
+        "kind": "duck",
+        "count": 2
+      }
+    ],
+    "rows": [
+      "##.....##",
+      "#d.....d#",
+      ".........",
+      "....*....",
+      ".........",
+      ".........",
+      ".........",
+      "#.......#",
+      "##.....##"
+    ]
+  }
+}

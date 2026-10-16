@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "bl_0040",
+  "game": "blast",
+  "payloadVersion": 1,
+  "contentHash": "f1b4945f2169468d",
+  "meta": {
+    "difficulty": "superHard",
+    "tags": [
+      "colour",
+      "box",
+      "duck",
+      "shape:corners"
+    ],
+    "metrics": {
+      "nearMisses": 0.458,
+      "winRate": 0.135
+    }
+  },
+  "payload": {
+    "moves": 40,
+    "colours": 4,
+    "goals": [
+      {
+        "kind": "colour",
+        "count": 40,
+        "colour": 1
+      },
+      {
+        "kind": "box",
+        "count": 19
+      },
+      {
+        "kind": "duck",
+        "count": 3
+      }
+    ],
+    "rows": [
+      "#d..d..d#",
+      ".........",
+      ".........",
+      ".........",
+      ".........",
+      ".X..X..X.",
+      ".X..X..X.",
+      ".X..X..X.",
+      ".X.XXX.X.",
+      "#X.XXX.X#"
+    ]
+  }
+}

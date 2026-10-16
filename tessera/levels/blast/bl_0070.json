@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "bl_0070",
+  "game": "blast",
+  "payloadVersion": 1,
+  "contentHash": "f69c5ffafe7059ca",
+  "meta": {
+    "difficulty": "hard",
+    "tags": [
+      "box",
+      "duck",
+      "shape:octagon"
+    ],
+    "metrics": {
+      "nearMisses": 0.434,
+      "winRate": 0.208
+    }
+  },
+  "payload": {
+    "moves": 30,
+    "colours": 5,
+    "goals": [
+      {
+        "kind": "box",
+        "count": 23
+      },
+      {
+        "kind": "duck",
+        "count": 3
+      }
+    ],
+    "rows": [
+      "###.d.###",
+      "##.....##",
+      "#d.....d#",
+      ".........",
+      "..xxxxx..",
+      ".xx...xx.",
+      ".xx.b.xx.",
+      "#xx...xx#",
+      "##x.x.x##",
+      "###xxx###"
+    ]
+  }
+}
