@@ -108,8 +108,11 @@
 
     // The deploy script points buildUrl at jsDelivr (docs/WEB-BUILD.md). A file it doesn't start sending in time comes
     // from this page's own copy.
-    const buildUrl = "https://cdn.jsdelivr.net/gh/ocebi/ocebi.github.io@ee1483050d7c61b7024e4e526027cd1b59114e78/tessera/Build";
+    const buildUrl = "https://cdn.jsdelivr.net/gh/ocebi/ocebi.github.io@900effbbd35560d64262ab88719221bddba3f03a/tessera/Build";
     const mirrorUrl = "Build";
+    // Game content (scenes, art, music) is fetched on demand from here; the deploy script points it at jsDelivr too.
+    const contentUrl = "https://cdn.jsdelivr.net/gh/ocebi/ocebi.github.io@900effbbd35560d64262ab88719221bddba3f03a/tessera/Build/content";
+    window.tesseraContentUrl = new URL(contentUrl, location.href).href;
     const cdnWaitMs = 10000;
     if (buildUrl !== mirrorUrl) {
       const pageFetch = window.fetch;
