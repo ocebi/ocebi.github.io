@@ -25,9 +25,9 @@
     <a class="brand" href="index.html">ÖZGÜR<span>ÇEBİ</span></a>
     <nav class="nav" aria-label="Primary">
       <a href="index.html#work" aria-current="page">Work</a>
+      <a href="index.html#tileworlds">Tileworlds</a>
       <a class="nav__optional" href="index.html#hyper-casual">Hyper-casual</a>
       <a href="index.html#about">About</a>
-      <a class="nav__casino" href="index.html#casino">Casino</a>
       <a class="btn btn--ghost nav__cta" href="cv/OzgurCebi_CV.pdf" target="_blank" rel="noopener noreferrer">
         CV<span class="visually-hidden"> (opens in a new tab)</span>
       </a>
@@ -109,6 +109,46 @@
     <span class="visually-hidden">How Parking Master Multiplayer 2 was built</span>
   </a>
 </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tileworlds" aria-labelledby="tw-h">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow">Personal project, open source, 2026</p>
+      <h2 id="tw-h">Tileworlds</h2>
+      <p class="section__lede section__lede--wide">Four mobile puzzle games on <b>Tileworks</b>, a modular Unity framework for
+        tile-based puzzle games that I wrote on my own time to show how I design and write gameplay code. It is not a shipped product: no players,
+        no metrics, and the art is AI-generated placeholder work.</p>
+    </div>
+    <div class="showcase">
+      <div class="prose stack">
+        <ul class="points">
+          <li><b>Rules you can test without the engine.</b> One deterministic rules engine runs Tile Match, Block
+            Puzzle, Blast and Gem Swap; each game is a list of systems and blockers plug in without touching the core.</li>
+          <li><b>Levels generated and measured, never guessed.</b> A solver and casual and skilled bots play every level
+            until it lands on its target win rate. 100 levels per game on a shared difficulty curve.</li>
+          <li><b>Rules run ahead, the view catches up.</b> Boards emit zero-allocation events that an event player
+            animates on lanes, so you can keep playing while pieces are still falling.</li>
+          <li><b>One transaction per level result.</b> SQLite saves with DAOs, migrations, backup and restore. An
+            in-house DI container validates every scope before anything is created.</li>
+          <li><b>Architecture rules as tests.</b> A wrong assembly reference, an engine type in a Model, a static mutable
+            field or a file over 400 lines fails the build. About 940 test cases in all.</li>
+        </ul>
+        <div class="showcase__actions">
+          <a class="btn btn--primary" href="https://github.com/ocebi/tileworks" target="_blank" rel="noopener noreferrer">
+            Read the code<span class="visually-hidden"> on GitHub (opens in a new tab)</span></a>
+          <a class="btn btn--ghost" href="tileworlds/" target="_blank" rel="noopener noreferrer">
+            Play in browser<span class="visually-hidden"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+      <ul class="phones" aria-label="Screenshots">
+        <li><img src="images/games/tileworlds/tilematch-game.jpg" width="296" height="640" loading="lazy" decoding="async" alt="Tile Match, level 45: a layered pile of tiles above a seven-slot tray."></li>
+        <li><img src="images/games/tileworlds/blockpuzzle-game.jpg" width="296" height="640" loading="lazy" decoding="async" alt="Block Puzzle, level 20: pieces dragged onto an 8 by 8 board."></li>
+        <li><img src="images/games/tileworlds/blast-game.jpg" width="296" height="640" loading="lazy" decoding="async" alt="Blast, level 25: groups of coloured cubes with rockets and bombs."></li>
+        <li><img src="images/games/tileworlds/match3-game.jpg" width="296" height="640" loading="lazy" decoding="async" alt="Gem Swap, level 40: a match-3 board with specials."></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -395,16 +435,23 @@
 <section class="section section--alt" id="casino" aria-labelledby="casino-h">
   <div class="wrap casino">
     <div class="prose stack">
-      <p class="eyebrow">Free-time project</p>
+      <p class="eyebrow">Side project, just for fun</p>
       <h2 id="casino-h">Casino Mares</h2>
-      <p>A little multiplayer game I made in my spare time: cats playing blackjack, roulette and slots
+      <p>A little multiplayer game I made in my spare time: cats playing blackjack, roulette, poker and slots
         in a seaside casino. It runs in your browser on desktop or phone, and everyone who drops in plays
-        in the same room. Come check it out and say hi
+        in the same room. Under the hood it is Photon Fusion with up to ten cats per room.
+        Come check it out and say hi
         <img class="casino__paw" src="images/casino-paw.png" width="64" height="64" decoding="async" alt=""></p>
     </div>
     <a class="btn btn--casino" href="casino/" target="_blank" rel="noopener noreferrer">
       Casino<span class="visually-hidden"> (opens in a new tab)</span>
     </a>
+    <ul class="casino__shots" aria-label="Screenshots">
+      <li><img src="images/games/casino-mares/terrace-800.jpg" srcset="images/games/casino-mares/terrace-800.jpg 800w, images/games/casino-mares/terrace-1600.jpg 1600w" sizes="(min-width:48rem) 25vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="Cats on a sunset terrace by the sea, with an island on the horizon."></li>
+      <li><img src="images/games/casino-mares/poker-800.jpg" srcset="images/games/casino-mares/poker-800.jpg 800w, images/games/casino-mares/poker-1600.jpg 1600w" sizes="(min-width:48rem) 25vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="A Texas Hold'em table with cats on stools and a cat dealer."></li>
+      <li><img src="images/games/casino-mares/roulette-800.jpg" srcset="images/games/casino-mares/roulette-800.jpg 800w, images/games/casino-mares/roulette-1600.jpg 1600w" sizes="(min-width:48rem) 25vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="The roulette table with the betting board open."></li>
+      <li><img src="images/games/casino-mares/drinking-800.jpg" srcset="images/games/casino-mares/drinking-800.jpg 800w, images/games/casino-mares/drinking-1600.jpg 1600w" sizes="(min-width:48rem) 25vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="Two cats on red stools at the wine bar."></li>
+    </ul>
   </div>
 </section>
 

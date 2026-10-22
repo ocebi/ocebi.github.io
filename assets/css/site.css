@@ -200,14 +200,6 @@
   }
   .nav a:hover, .nav a[aria-current] { color: var(--text-hi); }
   .nav__cta { margin-left: var(--s-2); }
-  /* The side project's link, in the casino button's pink gradient. */
-  .nav a.nav__casino {
-    font-weight: 600; color: #ff4f9a;
-    background: linear-gradient(110deg, #ff6a6a 0%, #ff2e93 50%, #b84dff 100%) 0 0 / 200% 100%;
-    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
-    transition: background-position 600ms var(--ease);
-  }
-  .nav a.nav__casino:hover { background-position: 100% 0; }
   @media (max-width: 47.99rem) {
     /* Keep every link reachable on a phone; let the row scroll if it is tight
        rather than hiding the navigation entirely. */
@@ -287,6 +279,26 @@
   @media (hover: hover) {
     .case:hover { transform: translateY(-4px); border-color: var(--line-strong); }
     .case:hover .case__art img { transform: scale(1.04); }
+  }
+
+  /* --- tileworlds showcase: prose beside a strip of portrait phone shots.
+     Portrait frames, not 16:9 art, so it does not read as another case study. --- */
+  .showcase { display: grid; gap: var(--s-7); align-items: start; }
+  @media (min-width: 60rem) {
+    .showcase { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: var(--s-8); }
+    .showcase > .prose { max-width: none; }
+  }
+  .showcase .section__lede b, .section__lede b { color: var(--text-hi); font-weight: 600; }
+  .points > li + li { margin-top: var(--s-3); }
+  .points li { padding-left: var(--s-4); border-left: 2px solid var(--accent-line); }
+  .points b { color: var(--text-hi); font-weight: 600; }
+  .showcase__actions { display: flex; flex-wrap: wrap; gap: var(--s-3); margin-top: var(--s-5); }
+  .phones { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s-3); }
+  @media (min-width: 40rem) { .phones { grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 60rem) { .phones { grid-template-columns: repeat(2, 1fr); gap: var(--s-4); } }
+  .phones img {
+    width: 100%; height: auto; aspect-ratio: 296 / 640; object-fit: cover;
+    border-radius: var(--r); border: 1px solid var(--line); background: var(--ink-800);
   }
 
   /* --- earlier work --- */
@@ -423,6 +435,13 @@
   }
   .btn--casino:focus-visible { outline-color: #ff4f9a; }
   @media (max-width: 47.99rem) { .btn--casino { width: 100%; } }
+  /* A strip of shots under the text and button, spanning both columns. */
+  .casino__shots { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s-3); }
+  @media (min-width: 48rem) { .casino__shots { grid-template-columns: repeat(4, 1fr); gap: var(--s-4); } }
+  .casino__shots img {
+    width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover;
+    border-radius: var(--r); border: 1px solid var(--line); background: var(--ink-800);
+  }
 
   /* --- footer --- */
   .site-footer { border-top: 1px solid var(--line); padding-block: var(--s-7); background: var(--ink-850); }
