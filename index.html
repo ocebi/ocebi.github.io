@@ -9,461 +9,326 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Özgür Çebi — Unity Game Developer">
 <meta property="og:description" content="Unity developer with six years on live mobile titles. Founding engineer on Highway Racer Pro, the #1 Racing game on the US App Store at launch.">
-<meta property="og:image" content="https://ocebi.github.io/images/games/highway-racer-pro/new-01-1600.jpg">
+<meta property="og:image" content="https://ocebi.github.io/images/games/highway-racer-pro/levels/west-desert-1200.jpg">
 <meta property="og:url" content="https://ocebi.github.io/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#08090c">
+<meta name="theme-color" content="#14161a">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/barlow-condensed-700.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/barlow-400.woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/site.css?v=3">
-<script src="assets/js/site.js" defer></script>
+<link rel="stylesheet" href="assets/css/home.css?v=1">
+<script src="assets/js/home.js?v=1" defer></script>
 </head>
 <body>
+
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="wrap--wide">
+<header class="top">
+  <div class="wrap">
     <a class="brand" href="index.html">ÖZGÜR<span>ÇEBİ</span></a>
-    <nav class="nav" aria-label="Primary">
-      <a href="index.html#work" aria-current="page">Work</a>
-      <a href="index.html#tileworlds">Tileworlds</a>
-      <a class="nav__optional" href="index.html#hyper-casual">Hyper-casual</a>
-      <a href="index.html#about">About</a>
-      <a class="btn btn--ghost nav__cta" href="cv/OzgurCebi_CV.pdf" target="_blank" rel="noopener noreferrer">
-        CV<span class="visually-hidden"> (opens in a new tab)</span>
-      </a>
+    <nav aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#tileworlds">Tileworlds</a>
+      <a class="opt" href="#hyper-casual">Hyper-casual</a>
+      <a href="#about">About</a>
+      <a class="cv" href="cv/OzgurCebi_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
     </nav>
   </div>
 </header>
+
+<nav class="rail" id="rail" aria-label="Sections">
+  <svg class="rail__car" viewBox="0 0 16 26" aria-hidden="true"><rect x="1" y="1" width="14" height="24" rx="5" fill="#ffc800"/><path d="M3.2 9.5 4.4 6h7.2l1.2 3.5Z" fill="#1b1d21"/><rect x="3.6" y="17.5" width="8.8" height="3" rx="1" fill="#1b1d21"/><rect x="2.4" y="2.2" width="3" height="1.4" rx=".7" fill="#fff"/><rect x="10.6" y="2.2" width="3" height="1.4" rx=".7" fill="#fff"/></svg>
+  <ol>
+    <li><a href="#top"><span>Start</span></a></li>
+    <li><a href="#evidence"><span>Evidence</span></a></li>
+    <li><a href="#work"><span>Selected work</span></a></li>
+    <li><a href="#tileworlds"><span>Tileworlds</span></a></li>
+    <li><a href="#earlier"><span>Earlier work</span></a></li>
+    <li><a href="#hyper-casual"><span>Hyper-casual</span></a></li>
+    <li><a href="#about"><span>How I work</span></a></li>
+    <li><a href="#academic"><span>Research</span></a></li>
+    <li><a href="#casino"><span>Casino Mares</span></a></li>
+  </ol>
+</nav>
+
 <main id="main">
 
-<section class="hero">
-  <div class="hero__media">
-    <img src="images/games/highway-racer-pro/new-01-1600.jpg"
-         srcset="images/games/highway-racer-pro/new-01-800.jpg 800w, images/games/highway-racer-pro/new-01-1600.jpg 1600w" sizes="100vw"
-         width="1600" height="900" fetchpriority="high" decoding="async"
-         alt="Highway Racer Pro: two tuned cars parked at a neon-lit petrol station on a Tokyo expressway at night.">
-  </div>
-  <div class="hero__body wrap">
-    <p class="eyebrow">Unity game developer in Istanbul</p>
-    <h1>Özgür Çebi</h1>
-    <p class="hero__lede">I take games from an empty project to a live product and stay with them
-      &mdash; six years across mid-core, hybrid-casual and hyper-casual titles.</p>
-    <div class="hero__meta">
-      <span><b>Highway Racer Pro</b> &mdash; #1 Racing, US App Store</span>
-      <span><b>15M</b> players on Parking Master Multiplayer 2</span>
+<section class="hero" id="top" aria-label="Introduction">
+  <img src="images/games/highway-racer-pro/levels/west-desert-2400.jpg" srcset="images/games/highway-racer-pro/levels/west-desert-1200.jpg 1200w, images/games/highway-racer-pro/levels/west-desert-2400.jpg 2400w" sizes="100vw" alt="Highway Racer Pro: a sports car on a highway through desert hills beside a passing train." fetchpriority="high">
+  <div class="hero__copy wrap">
+    <div class="gantry" id="gantry">
+      <div class="tag" id="tag" data-plate="a" data-wear="worn">
+        <s aria-hidden="true"></s>
+        <i style="left:24%"></i><i style="left:76%"></i>
+        <u style="left:11%"></u><u style="left:89%"></u>
+        <b style="left:5%;background:#c8322b;color:#fff;--r:-2deg" aria-hidden="true">JAN</b>
+        <b style="right:5%;background:#ffc800;color:#1b1d21;--r:1.5deg" aria-hidden="true">28</b>
+        <p class="tag__state">Istanbul</p>
+        <h1 aria-label="Özgür Çebi"><span aria-hidden="true">02GUR C3B1</span></h1>
+        <p class="tag__motto">Unity Game Developer</p>
+      </div>
     </div>
-    <div class="hero__actions">
-      <a class="btn btn--primary" href="#work">See the work</a>
-      <a class="btn btn--ghost" href="cv/OzgurCebi_CV.pdf" target="_blank" rel="noopener noreferrer">
-        Download CV<span class="visually-hidden"> (opens in a new tab)</span></a>
+    <p class="hero__lede">I take games from an empty project to a live product and stay with them. Six years across mid-core, hybrid-casual and hyper-casual titles.</p>
+    <div class="hero__cta">
+      <a class="btn" href="#work">See the work</a>
+      <a class="btn btn--light" href="cv/OzgurCebi_CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a>
     </div>
   </div>
+  <p class="hero__credit">Highway Racer Pro</p>
 </section>
 
-<section class="statbar" aria-label="Key numbers">
-  <ul class="wrap"><li><span class="stat__n">#1</span><span class="stat__l">Racing, US App Store</span></li><li><span class="stat__n">45+</span><span class="stat__l">Countries at launch</span></li><li><span class="stat__n">15M</span><span class="stat__l">Players, Parking Master</span></li><li><span class="stat__n">100M+</span><span class="stat__l">Studio downloads</span></li><li><span class="stat__n">6</span><span class="stat__l">Years shipping</span></li></ul>
-</section>
-
-
-<section class="section" id="work" aria-labelledby="work-h">
+<section class="block" id="evidence">
   <div class="wrap">
-    <div class="section__head">
-      <p class="eyebrow">Spektra Games, 2023&ndash;2026</p>
-      <h2 id="work-h">Selected work</h2>
-      <p class="section__lede">Two live titles I built and operated, from first commit to millions of players.</p>
+    <div class="sign">
+      <p class="sign__tab">Highway Racer Pro and Parking Master Multiplayer 2</p>
+      <div class="sign__face"><h2>The evidence</h2></div>
     </div>
-    <div class="cases">
-      <article class="case">
-  <div class="case__art">
-    <img src="images/games/highway-racer-pro/shot-05-800.jpg" srcset="images/games/highway-racer-pro/shot-05-800.jpg 800w, images/games/highway-racer-pro/shot-05-1600.jpg 1600w"
-         sizes="(min-width:60rem) 45vw, 100vw" width="1600" height="900"
-         loading="lazy" decoding="async" alt="Highway Racer Pro gameplay">
-  </div>
-  <div class="case__body">
-    <img class="case__icon" src="images/games/highway-racer-pro/icon-128.jpg" width="64" height="64" loading="lazy" decoding="async" alt="">
-    <h3 class="case__title">Highway Racer Pro</h3>
-    <p class="case__role">Founding engineer on gameplay, physics and tooling</p>
-    <p>#1 Racing on the US App Store at launch in the US and 45+ countries, and the category&rsquo;s most-downloaded title since. Featured by Apple in &ldquo;Games We Love&rdquo;.</p>
-    <div class="case__chips"><span class="chip">Vehicle physics</span><span class="chip">Addressables</span><span class="chip">Traffic AI</span><span class="chip">Native plugins</span></div>
-    <p><span class="case__link">How it was built</span></p>
-  </div>
-  <a class="case__cover" href="work/highway-racer-pro/index.html">
-    <span class="visually-hidden">How Highway Racer Pro was built</span>
-  </a>
-</article>
-      <article class="case">
-  <div class="case__art">
-    <img src="images/games/parking-master-multiplayer-2/new-04-800.jpg" srcset="images/games/parking-master-multiplayer-2/new-04-800.jpg 800w, images/games/parking-master-multiplayer-2/new-04-1600.jpg 1600w"
-         sizes="(min-width:60rem) 45vw, 100vw" width="1600" height="900"
-         loading="lazy" decoding="async" alt="Parking Master Multiplayer 2 gameplay">
-  </div>
-  <div class="case__body">
-    <img class="case__icon" src="images/games/parking-master-multiplayer-2/icon-128.jpg" width="64" height="64" loading="lazy" decoding="async" alt="">
-    <h3 class="case__title">Parking Master Multiplayer 2</h3>
-    <p class="case__role">Gameplay &amp; performance engineering</p>
-    <p>A live open-world driving title with 15M+ downloads, where I built customization, events and game modes, and kept it smooth on low-end hardware.</p>
-    <div class="case__chips"><span class="chip">Live ops</span><span class="chip">Customization systems</span><span class="chip">Memory optimization</span></div>
-    <p><span class="case__link">How it was built</span></p>
-  </div>
-  <a class="case__cover" href="work/parking-master-multiplayer-2/index.html">
-    <span class="visually-hidden">How Parking Master Multiplayer 2 was built</span>
-  </a>
-</article>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="tileworlds" aria-labelledby="tw-h">
-  <div class="wrap">
-    <div class="section__head">
-      <p class="eyebrow">Personal project, open source, 2026</p>
-      <h2 id="tw-h">Tileworlds</h2>
-      <p class="section__lede section__lede--wide">Four mobile puzzle games on <b>Tileworks</b>, a modular Unity framework for
-        tile-based puzzle games that I wrote on my own time to show how I design and write gameplay code. It is not a shipped product: no players,
-        no metrics, and the art is AI-generated placeholder work.</p>
-    </div>
-    <div class="showcase">
-      <div class="prose stack">
-        <ul class="points">
-          <li><b>Rules you can test without the engine.</b> One deterministic rules engine runs Tile Match, Block
-            Puzzle, Blast and Gem Swap; each game is a list of systems and blockers plug in without touching the core.</li>
-          <li><b>Levels generated and measured, never guessed.</b> A solver and casual and skilled bots play every level
-            until it lands on its target win rate. 100 levels per game on a shared difficulty curve.</li>
-          <li><b>Rules run ahead, the view catches up.</b> Boards emit zero-allocation events that an event player
-            animates on lanes, so you can keep playing while pieces are still falling.</li>
-          <li><b>One transaction per level result.</b> SQLite saves with DAOs, migrations, backup and restore. An
-            in-house DI container validates every scope before anything is created.</li>
-          <li><b>Architecture rules as tests.</b> A wrong assembly reference, an engine type in a Model, a static mutable
-            field or a file over 400 lines fails the build. About 940 test cases in all.</li>
+    <div class="evidence">
+      <figure>
+        <a class="story" href="https://apps.apple.com/us/iphone/story/id1831081938" target="_blank" rel="noopener noreferrer">
+          <div class="story__from"><img src="images/games/highway-racer-pro/appstore/app-store-badge.svg" alt="App Store"><span>Featured by Apple’s editors</span></div>
+          <img src="images/games/highway-racer-pro/appstore/games-we-love.jpg" alt="App Store story artwork for Highway Racer Pro: a red sports car on a highway.">
+          <div class="story__text">
+            <small>GAMES WE LOVE</small>
+            <b>Life Is a Highway</b>
+            <span>Hit the open road in radical races.</span>
+          </div>
+        </a>
+        <figcaption>Apple’s App Store editors featured Highway Racer Pro in “Games We Love”.</figcaption>
+      </figure>
+      <div class="evidence__right">
+        <ul class="facts">
+          <li><b>#1</b> Racing in the US and 45+ countries at launch</li>
+          <li><b>4.7</b> out of 5 from 85K App Store ratings</li>
+          <li><b>#3</b> in Racing on the US App Store today
+            <small>Rating and chart position read from <a href="https://apps.apple.com/us/app/highway-racer-pro/id6741471925" target="_blank" rel="noopener noreferrer">the App Store listing</a> on 10 November 2026.</small></li>
         </ul>
-        <div class="showcase__actions">
-          <a class="btn btn--primary" href="https://github.com/ocebi/tileworks" target="_blank" rel="noopener noreferrer">
-            Read the code<span class="visually-hidden"> on GitHub (opens in a new tab)</span></a>
-          <a class="btn btn--ghost" href="tileworlds/" target="_blank" rel="noopener noreferrer">
-            Play in browser<span class="visually-hidden"> (opens in a new tab)</span></a>
+        <div class="odo" id="odo" role="img" aria-label="15,000,000 players on Parking Master Multiplayer 2">
+          <div class="odo__row" data-value="15,000,000" aria-hidden="true"></div>
+          <p><b>Players on Parking Master Multiplayer 2.</b> Part of 100M+ downloads across the studio.</p>
         </div>
       </div>
-      <ul class="phones" aria-label="Screenshots">
-        <li><img src="images/games/tileworlds/tilematch-game.jpg" width="296" height="640" loading="lazy" decoding="async" alt="Tile Match, level 45: a layered pile of tiles above a seven-slot tray."></li>
-        <li><img src="images/games/tileworlds/blockpuzzle-game.jpg" width="296" height="640" loading="lazy" decoding="async" alt="Block Puzzle, level 20: pieces dragged onto an 8 by 8 board."></li>
-        <li><img src="images/games/tileworlds/blast-game.jpg" width="296" height="640" loading="lazy" decoding="async" alt="Blast, level 25: groups of coloured cubes with rockets and bombs."></li>
-        <li><img src="images/games/tileworlds/match3-game.jpg" width="296" height="640" loading="lazy" decoding="async" alt="Gem Swap, level 40: a match-3 board with specials."></li>
+    </div>
+  </div>
+</section>
+
+<section id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <div class="sep sep--lane" role="presentation"></div>
+    <div class="block" style="padding-bottom:0">
+      <div class="sign">
+        <p class="sign__tab">Spektra Games, 2023–2026</p>
+        <div class="sign__face"><h2 id="work-h">Selected work</h2></div>
+      </div>
+      <p class="lede">Two live titles I built and operated, from first commit to millions of players.</p>
+
+      <article class="case">
+        <div class="title-row">
+          <img src="images/games/highway-racer-pro/icon-128.jpg" alt="">
+          <h3>Highway Racer Pro</h3>
+        </div>
+        <p class="role">Founding engineer on gameplay, physics and tooling</p>
+        <p>#1 Racing on the US App Store at launch in the US and 45+ countries, and the category’s most-downloaded title since. Featured by Apple in “Games We Love”.</p>
+        <div class="plates"><span class="plate">Vehicle physics</span><span class="plate">Addressables</span><span class="plate">Traffic AI</span><span class="plate">Native plugins</span></div>
+        <a class="btn" href="work/highway-racer-pro/index.html">Read details</a>
+      </article>
+    </div>
+  </div>
+  <div class="strip" tabindex="0" aria-label="Highway Racer Pro screenshots">
+    <img src="images/games/highway-racer-pro/levels/west-bridge-1200.jpg" loading="lazy" alt="Highway Racer Pro: A sports car approaching a red suspension bridge with a city skyline behind.">
+    <img src="images/games/highway-racer-pro/levels/brazil-mountain-1200.jpg" loading="lazy" alt="Highway Racer Pro: A purple sports car drifting through a tree-lined mountain road.">
+    <img src="images/games/highway-racer-pro/levels/autobahn-1200.jpg" loading="lazy" alt="Highway Racer Pro: A purple car drifting on a German autobahn.">
+    <img src="images/games/highway-racer-pro/levels/west-port-1200.jpg" loading="lazy" alt="Highway Racer Pro: A coastal road curving past a container port at sunset.">
+    <img src="images/games/highway-racer-pro/levels/west-freeway-1200.jpg" loading="lazy" alt="Highway Racer Pro: A palm-lined coastal freeway with traffic and road signs.">
+  </div>
+
+  <div class="wrap block">
+    <article class="lot case">
+      <div>
+        <div class="title-row">
+          <img src="images/games/parking-master-multiplayer-2/icon-128.jpg" alt="">
+          <h3>Parking Master Multiplayer 2</h3>
+        </div>
+        <p class="role">Gameplay &amp; performance engineering</p>
+        <p>A live open-world driving title with 15M+ downloads, where I built customization, events and game modes, and kept it smooth on low-end hardware.</p>
+        <div class="plates"><span class="plate">Live ops</span><span class="plate">Customization systems</span><span class="plate">Memory optimization</span></div>
+        <a class="btn" href="work/parking-master-multiplayer-2/index.html">Read details</a>
+      </div>
+      <ul class="bays" aria-label="Screenshots">
+        <li><img src="images/games/parking-master-multiplayer-2/new-01-800.jpg" loading="lazy" alt="Parking Master Multiplayer 2 screenshot"></li>
+        <li><img src="images/games/parking-master-multiplayer-2/new-02-800.jpg" loading="lazy" alt="Parking Master Multiplayer 2 screenshot"></li>
+        <li><img src="images/games/parking-master-multiplayer-2/new-03-800.jpg" loading="lazy" alt="Parking Master Multiplayer 2 screenshot"></li>
+        <li><img src="images/games/parking-master-multiplayer-2/new-04-800.jpg" loading="lazy" alt="Parking Master Multiplayer 2 screenshot"></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="tileworlds" aria-labelledby="tw-h">
+  <div class="wrap">
+    <div class="sep sep--tiles" role="presentation"></div>
+    <div class="block">
+      <div class="sign">
+        <p class="sign__tab">Personal project, open source, 2026</p>
+        <div class="sign__face"><h2 id="tw-h">Tileworlds</h2></div>
+      </div>
+      <div class="tw">
+        <div>
+          <div class="player" id="tw-player">
+            <img src="images/games/tileworlds/hub.jpg" alt="Tileworlds hub screen">
+            <button class="btn player__start" type="button" id="tw-start">Play here</button>
+          </div>
+          <p class="player__note">Playable right here, without sound. <a href="tileworlds/" target="_blank" rel="noopener noreferrer">Open it full screen</a> for sound.</p>
+        </div>
+        <div>
+          <p class="lede">Four mobile puzzle games on <b>Tileworks</b>, a modular Unity framework I wrote on my own time to show how I design and write gameplay code. It is not a shipped product: no players, no metrics, and the art is AI-generated placeholder work.</p>
+          <ul class="tw__points">
+            <li><b>Rules you can test without the engine.</b> One deterministic rules engine runs Tile Match, Block Puzzle, Blast and Gem Swap.</li>
+            <li><b>Levels generated and measured, never guessed.</b> A solver and bots play every level until it lands on its target win rate.</li>
+            <li><b>Rules run ahead, the view catches up.</b> You can keep playing while pieces are still falling.</li>
+            <li><b>One transaction per level result.</b> SQLite saves with DAOs, migrations, backup and restore.</li>
+            <li><b>Architecture rules as tests.</b> About 940 test cases in all.</li>
+          </ul>
+          <ul class="tw__shots" aria-label="Screenshots">
+            <li><img src="images/games/tileworlds/tilematch-game.jpg" loading="lazy" alt="Tile Match, level 45"></li>
+            <li><img src="images/games/tileworlds/blockpuzzle-game.jpg" loading="lazy" alt="Block Puzzle, level 20"></li>
+            <li><img src="images/games/tileworlds/blast-game.jpg" loading="lazy" alt="Blast, level 25"></li>
+            <li><img src="images/games/tileworlds/match3-game.jpg" loading="lazy" alt="Gem Swap, level 40"></li>
+          </ul>
+          <p style="margin-top:1.5rem"><a class="btn btn--light" href="https://github.com/ocebi/tileworks" target="_blank" rel="noopener noreferrer">Read the code</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="earlier" aria-labelledby="earlier-h">
+  <div class="wrap">
+    <div class="sep sep--bar" role="presentation"></div>
+    <div class="block">
+      <div class="sign">
+        <p class="sign__tab">2020–2023</p>
+        <div class="sign__face"><h2 id="earlier-h">Earlier work</h2></div>
+      </div>
+      <p class="lede">Mid-core multiplayer and metaverse projects at HoloNext and KobGames.</p>
+      <div class="earlier">
+        <article>
+          <div class="earlier__media"><video src="media/robo-squad.mp4" poster="media/robo-squad-poster.jpg" controls muted playsinline preload="none"></video></div>
+          <h3><img src="images/games/icons/robo-squad.jpg" alt="">Robo Squad</h3>
+          <p>Mid-core multiplayer battle royale. I built the character system, skills, spectate mode, minimap, kill feed, trophy and mission systems, matchmaking and AI, plus the client side of the game APIs.</p>
+        </article>
+        <article>
+          <div class="earlier__media"><video src="media/hunt-heroes.mp4" poster="media/hunt-heroes-poster.jpg" controls muted playsinline preload="none"></video></div>
+          <h3><img src="images/games/icons/hunt-heroes.jpg" alt="">Hunt Heroes</h3>
+          <p>Mid-core co-op multiplayer with 15+ playable characters, each with a unique attack ability. I owned gameplay programming, real-time networking, AI, matchmaking and mission tracking, along with IAP, Play Store, Game Center and Facebook login integration and release.</p>
+        </article>
+        <article>
+          <div class="earlier__media" data-embed="https://drive.google.com/file/d/1DWX1ROseAX5OiXXcBLNuu51QpCHVUvOH/preview" data-embed-title="Kitties Metaverse gameplay">
+            <img src="images/games/kitties-metaverse-poster.jpg" loading="lazy" alt="">
+            <button class="btn" type="button" data-embed-play>Play gameplay</button>
+          </div>
+          <h3>Kitties Metaverse</h3>
+          <p>A WebGL open-world metaverse built in Unity and Photon Quantum: 128 concurrent players per room, with 4000+ playable characters assembled at runtime from on-chain data. Players link a wallet, explore, chat and join PvP battles, on web and mobile.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hyper-casual" aria-labelledby="hc-h">
+  <div class="wrap">
+    <div class="sep sep--tape" role="presentation"></div>
+    <div class="block">
+      <div class="sign sign--warn">
+        <p class="sign__tab">27 solo titles</p>
+        <div class="sign__face"><h2 id="hc-h">Hyper-casual</h2></div>
+      </div>
+      <p class="lede">I developed these 27 solo at HoloNext and KobGames, on a modular gameplay codebase I built to stand prototypes up fast. Most have since been delisted. Pick one up and throw it.</p>
+      <div class="pile" id="pile"></div>
+      <p class="pile__name" id="pile-name" aria-live="polite"><span>Hover or grab an icon to see its name.</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="sep sep--stones" role="presentation"></div>
+    <div class="block about" style="margin-top:0">
+      <div>
+        <div class="sign"><div class="sign__face"><h2 id="about-h">How I work</h2></div></div>
+        <p class="how__lead">I build from modular architecture and its documentation outward, and automate what would otherwise be done by hand.</p>
+        <p>Six years on live mobile games, most recently as one of the first two engineers on Highway Racer Pro. I work across whatever the game needs.</p>
+        <div class="plates"><span class="plate">Gameplay</span><span class="plate">Physics</span><span class="plate">AI</span><span class="plate">Networking</span><span class="plate">Tooling</span></div>
+        <div class="hire">
+          <h3>Looking for my next role</h3>
+          <p>If you have something interesting, get in touch.</p>
+          <div><a class="btn" href="https://linkedin.com/in/cebiozgur" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="btn btn--light" href="mailto:cebiozgur@outlook.com">cebiozgur@outlook.com</a></div>
+        </div>
+      </div>
+      <ul class="route">
+        <li class="road-asphalt"><p class="when">Nov 2023 – Sep 2026</p><h3>Spektra Games</h3><p>Highway Racer Pro, Parking Master Multiplayer 2</p></li>
+        <li class="road-stone"><p class="when">Aug 2022 – Aug 2023</p><h3>KobGames Studios</h3><p>Kitties Metaverse</p></li>
+        <li class="road-cart"><p class="when">Sep 2020 – Aug 2022</p><h3>HoloNext</h3><p>Hunt Heroes, Robo Squad</p></li>
+        <li class="road-dirt"><p class="when">2016 – 2021</p><h3>Yeditepe University</h3><p>BSc Computer Engineering</p></li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="section section--alt" id="earlier" aria-labelledby="earlier-h">
+<section id="academic" aria-labelledby="ac-h">
   <div class="wrap">
-    <div class="section__head">
-      <p class="eyebrow">2020&ndash;2023</p>
-      <h2 id="earlier-h">Earlier work</h2>
-      <p class="section__lede">Mid-core multiplayer and metaverse projects at HoloNext and KobGames.</p>
-    </div>
-    <div class="split">
-      <div><figure>
-      <div class="mediabox">
-        <video src="media/robo-squad.mp4" poster="media/robo-squad-poster.jpg" controls muted playsinline preload="none"></video>
-      </div>
-      
-    </figure></div>
-      <div class="prose stack">
-        <h3>Robo Squad</h3>
-        <p>Mid-core multiplayer battle royale. I built the character system, skills, spectate mode,
-          minimap, kill feed, trophy and mission systems, matchmaking and AI, plus the client side
-          of the game APIs.</p>
-      </div>
-    </div>
-
-    <div class="split split--reverse" style="margin-top: var(--s-9)">
-      <div><figure>
-      <div class="mediabox mediabox--portrait">
-        <video src="media/hunt-heroes.mp4" poster="media/hunt-heroes-poster.jpg" controls muted playsinline preload="none"></video>
-      </div>
-      
-    </figure></div>
-      <div class="prose stack">
-        <h3>Hunt Heroes</h3>
-        <p>Mid-core co-op multiplayer with 15+ playable characters, each with a unique attack ability.
-          I owned gameplay programming, real-time networking, AI, matchmaking and mission tracking,
-          along with IAP, Play Store, Game Center and Facebook login integration and release.</p>
-      </div>
-    </div>
-
-    <div class="split" style="margin-top: var(--s-9)">
-      <div><figure class="embed">
-      <div class="embed__frame" data-embed="https://drive.google.com/file/d/1DWX1ROseAX5OiXXcBLNuu51QpCHVUvOH/preview" data-embed-title="Kitties Metaverse gameplay">
-        <img src="images/games/kitties-metaverse-poster.jpg" width="1600" height="900" loading="lazy" decoding="async" alt="">
-        <button class="embed__play" type="button" data-embed-play>
-          <span class="visually-hidden">Play: Kitties Metaverse gameplay</span>
-          <span class="embed__label" aria-hidden="true">Play gameplay</span>
-        </button>
-      </div>
-      
-    </figure></div>
-      <div class="prose stack">
-        <h3>Kitties Metaverse</h3>
-        <p>A WebGL open-world metaverse built in Unity and Photon Quantum &mdash; 128 concurrent
-          players per room, with 4000+ playable characters assembled at runtime from on-chain data.
-          Players link a wallet, explore, chat and join PvP battles, on web and mobile.</p>
+    <div class="sep sep--rule" role="presentation"></div>
+    <div class="block paper" style="margin-top:0">
+      <a class="sheet" href="paper/IEEE_TUAC_Paper.pdf" aria-label="Read the paper (PDF)" target="_blank" rel="noopener noreferrer">
+        <p class="sheet__title">Behavior Tree vs. Finite State Machine AI in Shooter Games</p>
+        <p class="sheet__by">Özgür Çebi<br>IEEE TUAC, 2021</p>
+        <div class="sheet__cols" aria-hidden="true">
+          <div><i class="h"></i><i></i><i></i><i></i><i></i><i></i><i class="s"></i><i class="h"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="s"></i><i></i><i></i><i></i><i></i><i class="s"></i></div>
+          <div><i></i><i></i><i></i><i class="s"></i><i class="fig"></i><i class="h"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="s"></i><i></i><i></i><i></i></div>
+        </div>
+      </a>
+      <div>
+        <div class="sign">
+          <p class="sign__tab">IEEE TUAC, 2021</p>
+          <div class="sign__face"><h2 id="ac-h">Published research</h2></div>
+        </div>
+        <p class="lede">I built a shooter environment to benchmark two AI architectures head to head across varying agent counts and maps, then presented the results at the IEEE TUAC conference.</p>
+        <p style="margin-top:1.25rem"><a class="btn" href="paper/IEEE_TUAC_Paper.pdf" target="_blank" rel="noopener noreferrer">Read the paper (PDF)</a></p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="hyper-casual" aria-labelledby="hc-h">
+<section id="casino" aria-labelledby="casino-h">
   <div class="wrap">
-    <div class="section__head">
-      <p class="eyebrow">27 solo titles</p>
-      <h2 id="hc-h">Hyper-casual</h2>
-      <p class="section__lede section__lede--wide">The 27 titles below I developed solo at
-        HoloNext and KobGames, on top of a modular, extendable gameplay codebase I engineered to make
-        new prototypes fast to stand up. I contributed to 15+ more by mentoring junior developers or
-        managing the project. Most have since been delisted &mdash; hyper-casual titles are sunset
-        once their live window closes.</p>
+    <div class="sep sep--suits" role="presentation"><span>♠ <b>♥</b> ♣ <b>♦</b></span></div>
+    <div class="block casino" style="margin-top:0">
+      <img src="images/games/casino-mares/terrace-1600.jpg" loading="lazy" alt="Cats on a sunset terrace by the sea.">
+      <div>
+        <h2 id="casino-h">Casino Mares</h2>
+        <p>A little multiplayer game I made in my spare time: cats playing blackjack, roulette, poker and slots in a seaside casino. Everyone who drops in plays in the same room.</p>
+        <div class="room">
+          <div class="room__head"><b>Up to 10 cats per room</b></div>
+          <ul class="seats" aria-hidden="true">
+            <li class="in"><img src="images/casino-paw.png" alt=""></li><li class="in"><img src="images/casino-paw.png" alt=""></li><li class="in"><img src="images/casino-paw.png" alt=""></li><li class="in"><img src="images/casino-paw.png" alt=""></li><li class="in"><img src="images/casino-paw.png" alt=""></li><li class="in"><img src="images/casino-paw.png" alt=""></li><li class="in"><img src="images/casino-paw.png" alt=""></li><li class="in"><img src="images/casino-paw.png" alt=""></li><li class="in"><img src="images/casino-paw.png" alt=""></li><li class="in"><img src="images/casino-paw.png" alt=""></li>
+          </ul>
+        </div>
+        <a class="btn" href="casino/" target="_blank" rel="noopener noreferrer">Join the room</a>
+      </div>
     </div>
-    <ul class="grid-auto tile-grid" id="hc-grid" data-collapse-after="8">
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/balloon-fever.png" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Balloon Fever</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/oh-my-muscles.jpg" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Oh My Muscles!</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/boss-to-raise.jpg" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Boss To Raise</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/merge-defenser.jpg" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Merge Defenser</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/idle-warrior.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Idle Warrior</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/monster-car-arena.jpg" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Monster Car Arena</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/last-man-standing.jpg" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Last Man Standing</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/office-flirt.jpg" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Office Flirt</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/count-and-build.jpg" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Count And Build</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/jewelry-merge.jpg" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Jewelry Merge</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/minion-or-giant.jpg" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Minion or Giant</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/archer-run-3d.jpg" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Archer Run 3D</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/dino-escape-run.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Dino Escape Run</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/draw-shapes-3d.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Draw Shapes 3D</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/basket-life.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Basket Life</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/date-time.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Date Time!</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/influencer-agency.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Influencer Agency</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/shoe-run.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Shoe Run</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/drift-pursuit.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Drift Pursuit</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/lovers-match.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Lovers Match</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/hair-punch.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Hair Punch</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/fix-her-hair.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Fix Her Hair</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/color-merge-runner.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Color Merge Runner</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/sword-forger.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Sword Forger</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/tactical-police-escape.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Tactical Police Escape</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/shop-lift-escape.webp" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Shop Lift Escape</span>
-      </div>
-    </li>
-<li class="tile">
-      <div class="tile__body">
-        <img class="tile__icon" src="images/games/icons/comment-master.png" width="64" height="64" loading="lazy" decoding="async" alt="">
-        <span class="tile__name">Comment Master</span>
-      </div>
-    </li>
-    </ul>
-    <p class="hc-actions" hidden data-collapse-actions data-for="hc-grid"></p>
-  </div>
-</section>
-
-<section class="section section--alt" id="academic" aria-labelledby="ac-h">
-  <div class="wrap">
-    <div class="section__head">
-      <p class="eyebrow">IEEE TUAC, 2021</p>
-      <h2 id="ac-h">Published research</h2>
-    </div>
-    <div class="prose stack">
-      <h3>Behavior Tree vs. Finite State Machine AI in Shooter Games</h3>
-      <p>Built a shooter environment to benchmark two AI architectures head to head across varying
-        agent counts and maps, then presented the results at the IEEE TUAC conference.</p>
-      <p><a href="paper/IEEE_TUAC_Paper.pdf" target="_blank" rel="noopener noreferrer">Read the paper (PDF)<span class="visually-hidden"> — opens in a new tab</span></a></p>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="about" aria-labelledby="about-h">
-  <div class="wrap about">
-    <div class="stack">
-      <div class="section__head">
-        
-        <h2 id="about-h">How I work</h2>
-      </div>
-      <p>I&rsquo;m a Unity developer with six years on live mobile games, most recently as one of the
-        first two engineers on Highway Racer Pro. I work across whatever the game needs &mdash;
-        gameplay, physics, AI, networking and tooling &mdash; and I build from modular
-        architecture and its documentation outward, automating what would otherwise be done by hand.</p>
-      <p>I&rsquo;ve worked on-site, hybrid and fully remote over the past six years.</p>
-      <p>Right now I&rsquo;m looking for my next role. If you have something interesting, reach me
-        on <a href="https://linkedin.com/in/cebiozgur" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>
-        or at <a href="mailto:cebiozgur@outlook.com">cebiozgur@outlook.com</a>.</p>
-    </div>
-    <div>
-      <ul class="timeline">
-        <li><p class="when">Nov 2023 &ndash; Sep 2026</p><h3>Spektra Games</h3><p>Game Developer &mdash; Highway Racer Pro, Parking Master Multiplayer 2</p></li>
-        <li><p class="when">Aug 2022 &ndash; Aug 2023</p><h3>KobGames Studios</h3><p>Multiplayer Unity Developer &mdash; Kitties Metaverse</p></li>
-        <li><p class="when">Sep 2020 &ndash; Aug 2022</p><h3>HoloNext</h3><p>Unity Developer &mdash; Hunt Heroes, Robo Squad</p></li>
-        <li><p class="when">2016 &ndash; 2021</p><h3>Yeditepe University</h3><p>BSc Computer Engineering</p></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="section section--alt" id="casino" aria-labelledby="casino-h">
-  <div class="wrap casino">
-    <div class="prose stack">
-      <p class="eyebrow">Side project, just for fun</p>
-      <h2 id="casino-h">Casino Mares</h2>
-      <p>A little multiplayer game I made in my spare time: cats playing blackjack, roulette, poker and slots
-        in a seaside casino. It runs in your browser on desktop or phone, and everyone who drops in plays
-        in the same room. Under the hood it is Photon Fusion with up to ten cats per room.
-        Come check it out and say hi
-        <img class="casino__paw" src="images/casino-paw.png" width="64" height="64" decoding="async" alt=""></p>
-    </div>
-    <a class="btn btn--casino" href="casino/" target="_blank" rel="noopener noreferrer">
-      Casino<span class="visually-hidden"> (opens in a new tab)</span>
-    </a>
-    <ul class="casino__shots" aria-label="Screenshots">
-      <li><img src="images/games/casino-mares/terrace-800.jpg" srcset="images/games/casino-mares/terrace-800.jpg 800w, images/games/casino-mares/terrace-1600.jpg 1600w" sizes="(min-width:48rem) 25vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="Cats on a sunset terrace by the sea, with an island on the horizon."></li>
-      <li><img src="images/games/casino-mares/poker-800.jpg" srcset="images/games/casino-mares/poker-800.jpg 800w, images/games/casino-mares/poker-1600.jpg 1600w" sizes="(min-width:48rem) 25vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="A Texas Hold'em table with cats on stools and a cat dealer."></li>
-      <li><img src="images/games/casino-mares/roulette-800.jpg" srcset="images/games/casino-mares/roulette-800.jpg 800w, images/games/casino-mares/roulette-1600.jpg 1600w" sizes="(min-width:48rem) 25vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="The roulette table with the betting board open."></li>
-      <li><img src="images/games/casino-mares/drinking-800.jpg" srcset="images/games/casino-mares/drinking-800.jpg 800w, images/games/casino-mares/drinking-1600.jpg 1600w" sizes="(min-width:48rem) 25vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="Two cats on red stools at the wine bar."></li>
-    </ul>
   </div>
 </section>
 
 </main>
-<footer class="site-footer">
+
+<footer>
   <div class="wrap">
     <a href="mailto:cebiozgur@outlook.com">cebiozgur@outlook.com</a>
-    <a href="https://linkedin.com/in/cebiozgur" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>
-    <a href="https://github.com/ocebi" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>
-    <a href="cv/OzgurCebi_CV.pdf" target="_blank" rel="noopener noreferrer">CV<span class="visually-hidden"> (opens in a new tab)</span></a>
-    <p class="copyright">&copy; 2026 Özgür Çebi</p>
+    <a href="https://linkedin.com/in/cebiozgur" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://github.com/ocebi" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="cv/OzgurCebi_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+    <p>© 2026 Özgür Çebi</p>
   </div>
 </footer>
+
 </body>
 </html>
