@@ -77,17 +77,6 @@
   </div>
   <div id="rotate"><div></div>Turn your phone upright</div>
   <script>
-    // Embedded in the portfolio page (?muted): the audio context is never allowed to run, so the game stays silent.
-    if (new URLSearchParams(location.search).has("muted")) {
-      for (const name of ["AudioContext", "webkitAudioContext"]) {
-        const Base = window[name];
-        if (!Base) continue;
-        window[name] = class extends Base {
-          constructor(...args) { super(...args); super.suspend(); }
-          resume() { return Promise.resolve(); }
-        };
-      }
-    }
     const touch = matchMedia("(pointer: coarse)").matches || (navigator.maxTouchPoints > 0 && matchMedia("(hover: none)").matches);
     if (touch) document.body.classList.add("touch");
     // Safari's pinch zoom ignores user-scalable=no.
@@ -119,10 +108,10 @@
 
     // The deploy script points buildUrl at jsDelivr (docs/WEB-BUILD.md). A file it doesn't start sending in time comes
     // from this page's own copy.
-    const buildUrl = "https://cdn.jsdelivr.net/gh/ocebi/ocebi.github.io@a5f2e546566e88bd496713f68891b5c3303e6f65/tileworlds/Build";
+    const buildUrl = "https://cdn.jsdelivr.net/gh/ocebi/ocebi.github.io@f697b7388b3dcf1087b6998d17d197b01d769e9c/tileworlds/Build";
     const mirrorUrl = "Build";
     // Game content (scenes, art, music) is fetched on demand from here; the deploy script points it at jsDelivr too.
-    const contentUrl = "https://cdn.jsdelivr.net/gh/ocebi/ocebi.github.io@a5f2e546566e88bd496713f68891b5c3303e6f65/tileworlds/Build/content";
+    const contentUrl = "https://cdn.jsdelivr.net/gh/ocebi/ocebi.github.io@f697b7388b3dcf1087b6998d17d197b01d769e9c/tileworlds/Build/content";
     window.tileworksContentUrl = new URL(contentUrl, location.href).href;
     const cdnWaitMs = 10000;
     if (buildUrl !== mirrorUrl) {
