@@ -77,6 +77,17 @@
   </div>
   <div id="rotate"><div></div>Turn your phone upright</div>
   <script>
+    // Embedded in the portfolio page (?muted): the audio context is never allowed to run, so the game stays silent.
+    if (new URLSearchParams(location.search).has("muted")) {
+      for (const name of ["AudioContext", "webkitAudioContext"]) {
+        const Base = window[name];
+        if (!Base) continue;
+        window[name] = class extends Base {
+          constructor(...args) { super(...args); super.suspend(); }
+          resume() { return Promise.resolve(); }
+        };
+      }
+    }
     const touch = matchMedia("(pointer: coarse)").matches || (navigator.maxTouchPoints > 0 && matchMedia("(hover: none)").matches);
     if (touch) document.body.classList.add("touch");
     // Safari's pinch zoom ignores user-scalable=no.
